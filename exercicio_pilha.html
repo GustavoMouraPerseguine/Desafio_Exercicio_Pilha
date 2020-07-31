@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var pilha = {
+			numeros : [],
+			minimo : function num_min(lista) {				
+				return Math.min.apply(Math, lista);
+			}
+		};
+
+		var quant = prompt("Informe a quantidade de numeros da sua pilha:");
+
+		for (var i = 0; i < quant; i++) {
+			var numero = prompt("Informe o numero:");
+			pilha.numeros.push(numero);
+		};
+		
+		alert("Numero Minimo da Pilha: " + pilha.minimo(pilha.numeros));//Mostra o valor minimo da pilha
+	</script>
+</body>
+</html>
